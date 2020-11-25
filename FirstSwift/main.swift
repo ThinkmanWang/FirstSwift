@@ -70,6 +70,38 @@ func bubble_sort(lstNums: [Int], bDesc: Bool) -> [Int] {
     return _lstNums
 }
 
+func bubble_sort_plus(lstNums: inout [Int], bDesc: Bool) {
+    for i in stride(from: 0, to: lstNums.count - 1, by: 1) {
+        for j in stride(from: i + 1, to: lstNums.count, by: 1) {
+            if false == bDesc {
+                if lstNums[i] > lstNums[j] {
+                    var nTemp:Int = lstNums[i]
+                    lstNums[i] = lstNums[j]
+                    lstNums[j] = nTemp
+                }
+            } else {
+                if lstNums[i] < lstNums[j] {
+                    var nTemp:Int = lstNums[i]
+                    lstNums[i] = lstNums[j]
+                    lstNums[j] = nTemp
+                }
+            }
+        }
+    }
+}
+
+
+func dict_test() {
+    var dictTest = [String:Int]()
+    dictTest.updateValue(1, forKey: "One")
+    dictTest.updateValue(2, forKey: "Two")
+    dictTest.updateValue(3, forKey: "Three")
+    
+    for (szKey, nVal) in dictTest {
+        print("\(szKey) ==> \(nVal)")
+    }
+}
+
 func main() {
     var nA = 1
     var fB = 3.14
@@ -92,19 +124,24 @@ func main() {
     
 //    bubble sort
     var lstNums:[Int] = [1, 5, 7, 2, 3, 4, 10, 9]
-    lstNums = bubble_sort(lstNums: lstNums, bDesc: false)
+    lstNums.append(6)
+    lstNums.append(8)
+    
+    bubble_sort_plus(lstNums: &lstNums, bDesc: false)
     var szTxt:String = ""
     for nItem in lstNums {
         szTxt += String(format: "%d, ", arguments: [nItem])
     }
     print(szTxt)
     
-    lstNums = bubble_sort(lstNums: lstNums, bDesc: true)
+    bubble_sort_plus(lstNums: &lstNums, bDesc: true)
     szTxt = ""
     for nItem in lstNums {
         szTxt += String(format: "%d, ", arguments: [nItem])
     }
     print(szTxt)
+    
+    dict_test()
 }
 
 main()
