@@ -127,7 +127,18 @@ func class_test() {
     print(people.help())
 }
 
+func hanoi(nNum: Int, szX: String, szY: String, szZ: String) {
+    if 1 == nNum {
+        print("move disc \(nNum) from \(szX) to \(szZ)")
+    } else {
+        hanoi(nNum: nNum - 1, szX: szX, szY: szZ, szZ: szY)
+        print("move disc \(nNum) from \(szX) to \(szZ)")
+        hanoi(nNum: nNum - 1, szX: szY, szY: szX, szZ: szZ)
+    }
+}
+
 func main() {
+    print(String(format: "%@", ["Hello World"]))
     var nA = 1
     var fB = 3.14
     var nC: Int
@@ -169,6 +180,8 @@ func main() {
     dict_test()
     enum_test()
     class_test()
+    
+    hanoi(nNum: 3, szX: "X", szY: "Y", szZ: "Z")
 }
 
 main()
