@@ -8,5 +8,7 @@
 import Foundation
 
 class Homoerectus: Human {
-    
+    override public func help() -> String {
+        return "Help me"
+    }
 }

@@ -124,6 +124,7 @@ func class_test() {
     print("Height: \(people.m_nHeight), Weight: \(people.m_nWeight)")
     print(people.toString())
     
+    print(people.help())
 }
 
 func main() {

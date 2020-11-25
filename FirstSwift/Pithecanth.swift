@@ -8,5 +8,7 @@
 import Foundation
 
 class Pithecanth: Human {
-    
+    override public func help() -> String {
+        return "!@#$%^&*()"
+    }
 }
