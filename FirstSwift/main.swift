@@ -119,6 +119,13 @@ func enum_test() {
     print(weekDay)
 }
 
+func class_test() {
+    var people = Homoerectus(nHeight: 172, nWeight: 65)
+    print("Height: \(people.m_nHeight), Weight: \(people.m_nWeight)")
+    print(people.toString())
+    
+}
+
 func main() {
     var nA = 1
     var fB = 3.14
@@ -160,6 +167,7 @@ func main() {
     
     dict_test()
     enum_test()
+    class_test()
 }
 
 main()

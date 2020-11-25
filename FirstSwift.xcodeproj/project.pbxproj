@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		82F5DDBC256CF0E800E34B26 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82F5DDBB256CF0E800E34B26 /* main.swift */; };
+		82F5DDC4256DF91300E34B26 /* Human.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82F5DDC3256DF91300E34B26 /* Human.swift */; };
+		82F5DDC7256DF97F00E34B26 /* Pithecanth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82F5DDC6256DF97F00E34B26 /* Pithecanth.swift */; };
+		82F5DDCA256DF9DF00E34B26 /* Homoerectus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82F5DDC9256DF9DF00E34B26 /* Homoerectus.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +28,9 @@
 /* Begin PBXFileReference section */
 		82F5DDB8256CF0E800E34B26 /* FirstSwift */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = FirstSwift; sourceTree = BUILT_PRODUCTS_DIR; };
 		82F5DDBB256CF0E800E34B26 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		82F5DDC3256DF91300E34B26 /* Human.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Human.swift; sourceTree = "<group>"; };
+		82F5DDC6256DF97F00E34B26 /* Pithecanth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pithecanth.swift; sourceTree = "<group>"; };
+		82F5DDC9256DF9DF00E34B26 /* Homoerectus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Homoerectus.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +64,9 @@
 			isa = PBXGroup;
 			children = (
 				82F5DDBB256CF0E800E34B26 /* main.swift */,
+				82F5DDC3256DF91300E34B26 /* Human.swift */,
+				82F5DDC6256DF97F00E34B26 /* Pithecanth.swift */,
+				82F5DDC9256DF9DF00E34B26 /* Homoerectus.swift */,
 			);
 			path = FirstSwift;
 			sourceTree = "<group>";
@@ -120,6 +129,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				82F5DDBC256CF0E800E34B26 /* main.swift in Sources */,
+				82F5DDC4256DF91300E34B26 /* Human.swift in Sources */,
+				82F5DDCA256DF9DF00E34B26 /* Homoerectus.swift in Sources */,
+				82F5DDC7256DF97F00E34B26 /* Pithecanth.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
