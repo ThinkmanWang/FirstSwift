@@ -102,6 +102,23 @@ func dict_test() {
     }
 }
 
+enum DaysofaWeek {
+    case MONDAY
+    case TUESDAY
+    case WEDNESDAY
+    case THURSDAY
+    case FRIDAY
+    case SATURDAY
+    case SUNDAY
+}
+
+func enum_test() {
+    var weekDay:DaysofaWeek = DaysofaWeek.MONDAY
+    weekDay = DaysofaWeek.THURSDAY
+
+    print(weekDay)
+}
+
 func main() {
     var nA = 1
     var fB = 3.14
@@ -142,6 +159,7 @@ func main() {
     print(szTxt)
     
     dict_test()
+    enum_test()
 }
 
 main()
